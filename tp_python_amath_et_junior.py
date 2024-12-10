@@ -1,15 +1,13 @@
-class Creation_compte:
-    print("Pour créer un compte, entrez les informations suivantes: ")
-    prenom = input("Entrez votre prenom: ")
-    nom = input("Entrez votre nom: ")
-    print("Parfait Monsieur " + nom + ", votre compte a été créé avec succès.")
-    
-class CompteBancaire:
+class CompteBancaire:    
     def __init__(self, prenom, nom, numero, solde):
         self.prenom = prenom
         self.nom = nom
         self.numero = numero
         self.__solde = solde
+        print("Pour créer un compte, entrez les informations suivantes: ")
+        prenom = input("Entrez votre prenom: ")
+        nom = input("Entrez votre nom: ")
+        print("Parfait " + prenom + " " + nom + ", votre compte a été créé avec succès.")
         print("Que souhaitez-vous faire ?")
         print("1. Afficher les informations du compte")
         print("2. Déposer de l'argent")
